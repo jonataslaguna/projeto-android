@@ -38,10 +38,6 @@ body {
     font-family: var(--fonte-padrao);
 }
 
-a.externo::after{
-    content: '\1F517';
-}
-
 
 header{
     background-image: linear-gradient(to bottom,var(--cor3), var(--cor5));
@@ -167,22 +163,34 @@ aside {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.296);
+    
 }
+
+aside > p {
+    text-indent: 0%
+}
+
 aside > h3 {
     background-color: var(--cor4);
     color: white;
     padding: 10px;
     margin: -10px -10px 0px -10px;
     border-radius: 10px 10px 0px 0px;
-    
-    
 }
 
 aside > ul {
     list-style-type: '\2714\00A0\00A0';
-    list-style-position: inside; /* Bolinhas da lista dentro de aside  */
-    columns: 2; /* Dividir a lista  */
+    list-style-position: inside; /*  lista dentro de aside  */
+    columns: 2; /* Dividir a lista em duas colunas  */
 
+}
+
+aside > ul > li > abbr{
+    text-decoration: none;
+}
+
+aside > ul > li > abbr:hover {
+    text-decoration: underline;
 }
 
 footer{
